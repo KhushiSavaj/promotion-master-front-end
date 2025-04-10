@@ -1,0 +1,166 @@
+.App {
+  text-align: left;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #000;
+  background-color: #f2f2f2;
+  font-size: 14px;
+  line-height: 28px;
+  font-family: "helvetica-light";
+}
+img {
+  max-width: 100%;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+a:hover {
+  color: #008329;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  color: #222222;
+}
+ul,
+li,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+button:focus {
+  outline: none;
+}
+.MuiFormControlLabel-root .MuiFormControlLabel-label {
+  font-size: 14px;
+}
+body .MuiFormLabel-root {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 15px;
+}
+body .MuiSelect-root {
+  padding: 10.5px 14px;
+  font-size: 14px;
+}
+
+.rating {
+  margin: 0 auto 1em;
+  font-size: 45px;
+  overflow: hidden;
+}
+
+.rating button,
+.rating label {
+  float: right;
+  color: #aaa;
+  font-size: larger;
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+  -webkit-transition: color 0.4s;
+  -moz-transition: color 0.4s;
+  -o-transition: color 0.4s;
+  transition: color 0.4s;
+}
+.rating label:hover ~ label,
+.rating input:focus ~ label,
+.rating label:hover,
+.rating button:hover,
+.rating button:hover ~ button,
+.rating button:focus,
+.rating button:focus ~ button {
+  color: orange;
+  cursor: pointer;
+}
+.rating2 {
+  display: flex;
+  justify-content: center;
+  direction: rtl;
+  text-align: center;
+}
+.rating2 a {
+  float: none;
+}
+
+
+/* Base setup */
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+/* Ratings widget */
+.rate {
+    display: inline-block;
+    border: 0;
+}
+/* Hide radio */
+.rate > input {
+    display: none;
+}
+/* Order correctly by floating highest to the right */
+.rate > label {
+    float: right;
+  color: #aaa;
+}
+/* The star of the show */
+.rate > label:before {
+    display: inline-block;
+    font-size: 3.1rem;
+    padding: .3rem .2rem;
+    margin: 0;
+    cursor: pointer;
+    font-family: FontAwesome;
+    content: "\f005 "; /* full star */
+}
+/* Half star trick */
+ .rate .half:before {
+    content: "\f089 "; /* half star no outline */
+    position: absolute;
+    padding-right: 0;
+} 
+
+.loader {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Click + hover color */
+/* input:checked ~ label, */
+/* label:hover { color:  rgb(255, 174, 0);  } */
+
+/* Hover highlights */
+input:checked + label:hover, input:checked ~ label:hover, /* highlight current and previous stars */
+input:checked ~ label:hover ~ label, /* highlight previous selected stars for new rating */
+label:hover ~ input:checked ~ label /* highlight previous selected stars */ { color:  #32CD32;  } 
+
+.MuiPopover-root {
+  z-index: 9999 !important;
+}

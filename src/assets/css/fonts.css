@@ -1,0 +1,41 @@
+@font-face {
+	font-family: 'Helvetica';
+	src: url('../fonts/Helvetica.eot');
+	src: local('☺'), url('../fonts/Helvetica.woff') format('woff'), url('../fonts/Helvetica.ttf') format('truetype'), url('../fonts/Helvetica.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'helvetica-light';
+	src: url('../fonts/helvetica-light.eot');
+	src: local('☺'), url('../fonts/helvetica-light.woff') format('woff'), url('../fonts/helvetica-light.ttf') format('truetype'), url('../fonts/helvetica-light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Helvetica-Bold';
+	src: url('../fonts/Helvetica-Bold.eot');
+	src: local('☺'), url('../fonts/Helvetica-Bold.woff') format('woff'), url('../fonts/Helvetica-Bold.ttf') format('truetype'), url('../fonts/Helvetica-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'LeagueSpartan-Bold';
+	src: url('../fonts/LeagueSpartan-Bold.eot');
+	src: local('☺'), url('../fonts/LeagueSpartan-Bold.woff') format('woff'), url('../fonts/LeagueSpartan-Bold.ttf') format('truetype'), url('../fonts/LeagueSpartan-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'LeagueSpartan-Regular';
+	src: url('../fonts/leaguespartan-regular.eot');
+	src: local('☺'), url('../fonts/leaguespartan-regular.woff') format('woff'), url('../fonts/leaguespartan-regular.ttf') format('truetype'), url('../fonts/leaguespartan-regular.svg') format('svg');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
